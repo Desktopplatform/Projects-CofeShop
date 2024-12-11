@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>خانه کافی شاپ</title>
+</head>
+
+<body id="index-page">
+  <header class="header">
+    <nav class="col-12" id="navbar">
+      <div class="col-9 wrapper">
+        <div class="logo"><a href="./indxe.html">لوگو</a></div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a href="./indxe.html" class="active">خانه</a></li>
+          <li><a href="#about">درباره ما</a></li>
+          <li>
+            <a href="#gallery" class="desktop-item">گالری</a>
+          </li>
+          <li>
+            <a href="#menu" class="desktop-item">محصولات</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">محصولات</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="./images/events-slider/events-slider-2.jpg" alt="تصویر" loading="lazy">
+                </div>
+                <div class="row">
+                  <header>نوشیدنی های سرد</header>
+                  <ul class="mega-links">
+                    <li><a href="#">آیتم 1</a></li>
+                    <li><a href="#">2آیتم</a></li>
+                    <li><a href="#">3آیتم</a></li>
+                    <li><a href="#">4آیتم</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>نوشیدنی های گرم</header>
+                  <ul class="mega-links">
+                    <li><a href="#">آیتم 1</a></li>
+                    <li><a href="#">2آیتم</a></li>
+                    <li><a href="#">3آیتم</a></li>
+                    <li><a href="#">4آیتم</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>پیتزا</header>
+                  <ul class="mega-links">
+                    <li><a href="#">آیتم 1</a></li>
+                    <li><a href="#">2آیتم</a></li>
+                    <li><a href="#">3آیتم</a></li>
+                    <li><a href="#">4آیتم</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#contactUs">تماس با ما</a></li>
+        </ul>
+        <!---cart--->
+        <div class="cart-nav">
+          <a href="./cart.html"><i class="bi bi-cart3"></i></a>
+          <span id="item-count">0</span>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="./images/hero-bg.jpg" alt="تصویر" loading="lazy">
+      <div class="col-4 container-hero">
+        <div class=" content-text" data-aos="fade-in">
+          <h2 data-aos="fade-up" class="typing" data-aos-delay="100">به کافه رستوران <span> باران </span>خوش آمدید</h2>
+          <p data-aos="fade-up" data-aos-delay="200">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+          <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="#menu" class="cta-btn active-cta-btn">منو محصولات</a>
+            <a href="#Bookatable" class="cta-btn">ارتباط با ما</a>
+          </div>
+          <form class="form-search" method="get" action="#">
+            <button type="submit" id="searchBtn">جستجو</button>
+            <input type="search" id="searchInput" onkeyup="searchProducts()" name="search"
+              placeholder="عبارت مدنظر خود را جستجو کنید....">
+
+          </form>
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <!-------about--------->
+    <section id="about" class="about">
+      <div class="container-about">
+        <div class="about-img">
+          <img src="./images/about-bg.jpg" alt="تصویر پس زمینه درباره ما" loading="lazy">
+          <div class="dark-filter"></div>
+        </div>
+        <div class="row-about">
+          <div class="col-3">
+            <img src="./images/about.jpg" alt="تصویر درباره ما" loading="lazy">
+          </div>
+          <div class="about-text" data-aos-delay="100" data-aos="fade-up">
+            <div class="col-9">
+              <h1>لذت ها را به شایستگی فراهم می کند.</h1>
+              <p class="p-etalik"><i> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن ساختگی
+                  با تولید سادگی نامفهوم از صنعت چاپ</i></p>
+              <p><i class="bi bi-check2-all"></i>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+              <p><i class="bi bi-check2-all"></i>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+              <p><i class="bi bi-check2-all"></i>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
+              <p class="p-about-content">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!------whyUs------>
+    <section class="whyUs">
+      <!-- Section Title -->
+      <div class="container-title section-title" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-4 title-sec">
+          <h2>چرا ما</h2>
+          <p>لورم ایپسوم متن ساختگی</p>
+        </div>
+      </div>
+      <div class="container-whyus">
+        <div data-aos="fade-up" data-aos-delay="200">
+          <div class=" card">
+            <span>01</span>
+            <h2>لورم ایپسوم</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <div class="card">
+            <span>02</span>
+            <h2>لورم ایپسوم</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="400">
+          <div class="card">
+            <span>03</span>
+            <h2>لورم ایپسوم</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--------menu-------->
+
+    <section id="menu" class="menu">
+      <div class="container-title section-title" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-4 title-sec">
+          <h2>منو</h2>
+          <p>منوی خوشمزه مارا بررسی کنید</p>
+        </div>
+      </div>
+      <div class="container-tabs" data-aos="fade-up" data-aos-delay="200">
+        <div class="navtabs">
+          <div class="navtab active" data-target="home" onclick="showCards('home')">همه</div>
+          <div class="navtab" data-target="hot-drink" onclick="showCards('hot-drink')">نوشیدنی گرم</div>
+          <div class="navtab" data-target="ice-drink" onclick="showCards('ice-drink')">نوشیدنی سرد</div>
+          <div class="navtab" data-target="pizza" onclick="showCards('pizza')">پیتزا</div>
+          <div class="navtab" data-target="fried" onclick="showCards('fried')">سخاری</div>
+          <div class="underline"></div>
+        </div>
+
+        <div id="home" class="content active">
+          <div class="container-menu" id="home-menu">
+            <!-- Product Cards for Home Category -->
+          </div>
+        </div>
+        <div id="hot-drink" class="content">
+          <div class="container-menu" id="hot-drink-menu">
+            <!-- Product Cards for Hot Drinks -->
+          </div>
+        </div>
+        <div id="ice-drink" class="content">
+          <div class="container-menu" id="ice-drink-menu">
+            <!-- Product Cards for Ice Drinks -->
+          </div>
+        </div>
+        <div id="pizza" class="content">
+          <div class="container-menu" id="pizza-menu">
+            <!-- Product Cards for Pizza -->
+          </div>
+        </div>
+        <div id="fried" class="content">
+          <div class="container-menu" id="fried-menu">
+            <!-- Product Cards for Fried Items -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Book a table-->
+    <section id="Bookatable" class="Bookatable">
+      <!-- Section Title -->
+      <div class="container-title section-title" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-4 title-sec">
+          <h2>رزرو میز</h2>
+          <p>لورم ایپسوم متن ساختگی</p>
+        </div>
+      </div>
+      <div class="container-bookTable">
+        <div class="form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row">
+            <div class="col">
+              <input type="text" id="fullname" placeholder="نام و نام خانوادگی" required="">
+            </div>
+            <div class="col">
+              <input type="email" id="email" placeholder="ایمیل" required="">
+            </div>
+            <div class="col">
+              <input type="number" class="number" name="people" id="people" placeholder="تعداد افراد" required="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" id="phone" placeholder="شماره تماس" required="">
+            </div>
+            <div class="col">
+              <input type="date" id="date" placeholder="تاریخ" required>
+            </div>
+            <div class="col">
+              <input type="time" name="time" id="time" placeholder="زمان" required="">
+            </div>
+          </div>
+          <div class="col">
+            <textarea name="text" id="textarea" placeholder="توضیحات"></textarea>
+          </div>
+          <div class="col">
+            <button type="submit" class="buttonBook" id="buttonBook">رزرو وقت</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---gallery--->
+    <section id="gallery" class="gallery">
+      <!-- Section Title -->
+      <div class="container-title section-title" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-4 title-sec">
+          <h2>گالری</h2>
+          <p>لورم ایپسوم متن ساختگی</p>
+        </div>
+      </div>
+
+      <div class="container-gallery">
+        <div class="gallery-content">
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+            <img src="./images/gallery/gallery-1.jpg" alt="تصویر گالری 1" onclick="openModal(this.src)">
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+            <img src="./images/gallery/gallery-2.jpg" alt="تصویر گالری 2" onclick="openModal(this.src)">
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+            <img src="./images/gallery/gallery-3.jpg" alt="تصویر گالری 3" onclick="openModal(this.src)">
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+            <img src="./images/gallery/gallery-4.jpg" alt="تصویر گالری 4" onclick="openModal(this.src)">
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+            <img src="./images/gallery/gallery-5.jpg" alt="تصویر گالری 5" onclick="openModal(this.src)">
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="700">
+            <img src="./images/gallery/gallery-6.jpg" alt="تصویر گالری 6" onclick="openModal(this.src)">
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+            <img src="./images/gallery/gallery-7.jpg" alt="تصویر گالری 7" onclick="openModal(this.src)">
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="900">
+            <img src="./images/gallery/gallery-8.jpg" alt="تصویر گالری 8" onclick="openModal(this.src)">
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img id="modalImage" src="">
+        </div>
+      </div>
+    </section>
+
+    <!--chefs-->
+    <section id="chefs" class="chefs">
+      <!-- Section Title -->
+      <div class="container-title section-title" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-4 title-sec">
+          <h2>تیم ما</h2>
+          <p>لورم ایپسوم متن ساختگی</p>
+        </div>
+      </div>
+      <div class="container-chefs">
+        <div class="col-4 ">
+          <div class=" chefs-content" data-aos="fade-up" data-aos-delay="200">
+            <img src="./images/chefs/chefs-1.jpg" alt="تصویر" loading="lazy">
+            <div class="chefs-info">
+              <div class="chefs-info-content">
+                <h4>محمد بحرانی</h4>
+                <p><i>لورم ایپسوم متن ساختگی</i></p>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 ">
+          <div class=" chefs-content" data-aos="fade-up" data-aos-delay="300">
+            <img src="./images/chefs/chefs-2.jpg" alt="تصویر" loading="lazy">
+            <div class="chefs-info">
+              <div class="chefs-info-content">
+                <h4>نگار ابراهیمی</h4>
+                <p><i>لورم ایپسوم متن ساختگی</i></p>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 ">
+          <div class=" chefs-content" data-aos="fade-up" data-aos-delay="400">
+            <img src="./images/chefs/chefs-3.jpg" alt="تصویر" loading="lazy">
+            <div class="chefs-info">
+              <div class="chefs-info-content">
+                <h4>اصغر جعفرزاده</h4>
+                <p><i>لورم ایپسوم متن ساختگی</i></p>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--contactUs--->
+    <section id="contactUs" class="contactUs">
+      <!-- Section Title -->
+      <div class="container-title section-title" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-4 title-sec">
+          <h2>تماس با ما</h2>
+          <p>لورم ایپسوم متن ساختگی</p>
+        </div>
+      </div>
+      <div class="google-contact">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103515.44619797675!2d50.86798830742338!3d35.82796706458657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dbf95ef45f011%3A0x722a04e54eba9bcd!2sKaraj%2C%20Alborz%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1723817191192!5m2!1sen!2s"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="container-contact">
+        <div class="form-contact">
+          <div class="form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+              <div class="col">
+                <input type="text" id="fullname" placeholder="نام و نام خانوادگی" required="">
+              </div>
+              <div class="col">
+                <input type="email" id="email" placeholder="ایمیل" required="">
+              </div>
+            </div>
+            <div class="col">
+              <input type="text" class="subject-input" name="subject" id="subject" placeholder="موضوع" required="">
+            </div>
+            <div class="col">
+              <textarea name="text" id="textarea" placeholder="توضیحات"></textarea>
+            </div>
+            <div class="col">
+              <button type="submit" class="buttonBook" id="buttonBook">ارسال پیام</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="icon-text-contact">
+
+          <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <h3>آدرس</h3>
+              <p>کرج گوهردشت فلکه</p>
+            </div>
+          </div>
+          <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone"></i>
+            <div>
+              <h3>تلفن</h3>
+              <p>026 65767509900</p>
+            </div>
+          </div>
+          <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-envelope"></i>
+            <div>
+              <h3>ایمیل</h3>
+              <p>baran@gmail.com</p>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <!--Scrpll button top-->
+    <button id="scrollBtn"><i class="bi bi-arrow-up"></i></button>
+    <section id="footer">
+      <footer class="footer">
+        <div>
+          <h4>درباره ما</h4>
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+        </div>
+        <div>
+          <h4>لینک‌های مهم</h4>
+          <a href="#">صفحه اصلی</a><br>
+          <a href="#">محصولات</a><br>
+          <a href="#">تماس با ما</a>
+        </div>
+        <div>
+          <h4>تماس با ما</h4>
+          <p>ایمیل: baran@gamil.com</p>
+          <p>تلفن: 156-546-026</p>
+        </div>
+        <div class="icon-footer">
+          <a href="#"><i class="bi bi-instagram"></i></a><br>
+          <a href="#"><i class="bi bi-telegram"></i></a><br>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

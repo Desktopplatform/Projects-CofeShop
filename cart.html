@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>خانه کافی شاپ</title>
+</head>
+
+<body id="cart-page">
+
+    <main>
+        <section id="tablecarts">
+            <div class="container-headeTable">
+                <!-- Section Title -->
+                <div class="container-title section-title">
+                    <div class="col-4 title-sec">
+                        <h2>سبد خرید</h2>
+                        <a href="./indxe.html">
+                            <p>بازگشت به صفحه اصلی</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-table">
+                <table class="tableCart">
+                    <thead>
+                        <tr>
+                            <th>حذف محصول</th>
+                            <th>عکس محصول</th>
+                            <th>عنوان محصول</th>
+                            <th>قیمت محصول</th>
+                            <th>تعداد محصول</th>
+                            <th>قیمت کل</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- <tr>
+                    <td><img src="./images/menu/cafee2.jpg" alt="Product 1"></td>
+                    <td>محصول ۱</td>
+                    <td class="price">50000 تومان</td>
+                    <td><input type="number" value="1" min="1" class="quantity" onchange="updateTotal()"></td>
+                    <td class="total-price">50000 تومان</td>
+                </tr>
+                <tr>
+                    <td><img src="./images/menu/cake.jpg" alt="Product 2"></td>
+                    <td>محصول ۲</td>
+                    <td class="price">30000 تومان</td>
+                    <td><input type="number" value="1" min="1" class="quantity" onchange="updateTotal()"></td>
+                    <td class="total-price">30000 تومان</td>
+                </tr> -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="total">جمع کل:</td>
+                            <td id="grand-total">80000 تومان</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+    </main>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const tableBody = document.getElementById('cart-items');
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            let grandTotal = 0;
+
+            function updateCart() {
+                tableBody.innerHTML = '';
+                grandTotal = 0;
+
+                cartItems.forEach((item, index) => {
+                    const totalPrice = item.Price * item.NuNmber;
+                    grandTotal += totalPrice;
+
+                    tableBody.innerHTML += `
+                    <tr>
+                        <td><i class="bi bi-trash" onclick="deleteItem(${index})"></i></td>
+                        <td><img src="${item.Images}" alt="${item.Title}" width="50"></td>
+                        <td>${item.Title}</td>
+                        <td class="price">${item.Price} تومان</td>
+                        <td>${item.NuNmber}</td>
+                        <td class="total-price">${totalPrice} تومان</td>
+                    </tr>
+                `;
+                });
+
+                document.getElementById('grand-total').innerText = `${grandTotal} تومان`;
+            }
+            // delete data
+            window.deleteItem = function (index) {
+                cartItems.splice(index, 1);
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                updateCart();
+            };
+
+            updateCart();
+        });
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
